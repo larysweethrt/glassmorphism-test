@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+ 
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+
+ }
+
+ body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(kai-oberhauser-BKAaLmT0tIs-unsplash.jpg);
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.212);
+    width: 25%;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    position: relative;
+    
+    
+}
+
+.container::before{
+    content: '';
+    border: solid rgba(235, 202, 202, 0.5) 2px;
+    border-right: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.container::after{
+    content: '';
+    border: solid rgba(255, 255, 255, 0.2) 2px;
+    border-left: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+.container h1{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.container img{
+    max-width: 100%;
+    max-width: 100%;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.container p{
+    font-size: 11px;
+    margin-bottom: 0.5rem;
+}
+
+.container a{
+    z-index: 1;
+    background-color: rgba(128, 0, 128, 0.329);
+    padding: 8px 5px;
+    width: 90%;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.container a:hover{
+    background-color: rgba(250, 242, 243, 0.349);
+}
+
